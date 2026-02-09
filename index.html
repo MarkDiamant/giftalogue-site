@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GIFTALOGUE — The Gift Catalogue</title>
+
+  <meta name="description" content="Giftalogue is a premium printed gift catalogue. Issue 01 launching Spring 2026." />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap navbar">
+    <a class="brand" href="index.html" aria-label="Giftalogue home">
+      <img
+        src="assets/img/giftalogue-logo-tagline.png"
+        alt="Giftalogue — The Gift Catalogue"
+      />
+    </a>
+
+    <nav class="links">
+      <a class="active" href="index.html">Home</a>
+      <a href="for-brands.html">For Brands</a>
+      <a href="contact.html" class="btn">Enquire</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="kicker">Spring catalogue 2026</div>
+
+    <h1 class="h1">GIFTALOGUE</h1>
+
+    <p class="sub">
+      A curated, design‑led <strong>gift catalogue</strong>.  
+      Premium products, thoughtfully presented.
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" href="contact.html">Request brand info</a>
+      <a class="btn" href="for-brands.html">See how it works</a>
+    </div>
+
+    <div class="badges">
+      <div class="badge">Issue 01 launching Spring 2026</div>
+      <div class="badge">Limited brand partners</div>
+      <div class="badge">Product‑led, not ad‑led</div>
+    </div>
+  </section>
+
+  <!-- EXAMPLES -->
+  <section class="section">
+    <h2>What it will look like</h2>
+    <p>Design concepts for the upcoming catalogue (examples only).</p>
+
+    <div class="grid cols-3">
+      <article class="card">
+        <img class="media" src="assets/img/cover-concept-1.jpg" alt="Cover concept" />
+        <div class="pad">
+          <strong>Cover concept</strong>
+          <div class="caption">Full‑page image with masthead on‑image.</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="media" src="assets/img/spread-single.jpg" alt="Single product page" />
+        <div class="pad">
+          <strong>Single product page</strong>
+          <div class="caption">One hero product with clear CTA.</div>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="media" src="assets/img/spread-grid.jpg" alt="Multi product page" />
+        <div class="pad">
+          <strong>Multi‑product page</strong>
+          <div class="caption">Four products per page with QR codes.</div>
+        </div>
+      </article>
+    </div>
+
+    <p class="small" style="margin-top:12px">
+      Images can be added later — the site works without them.
+    </p>
+  </section>
+
+  <!-- FOR BRANDS -->
+  <section class="section">
+    <h2>For brands</h2>
+    <p>
+      A premium print placement for brands that belong in a curated catalogue.
+    </p>
+
+    <ul class="list">
+      <li>Giftalogue‑designed layouts</li>
+      <li>Limited placements per issue</li>
+      <li>Placements from <strong>£400</strong></li>
+    </ul>
+
+    <div class="cta" style="margin-top:16px">
+      <a class="btn primary" href="contact.html">Enquire for Issue 01</a>
+      <a class="btn" href="for-brands.html">View packages</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div>
+      <img
+        src="assets/img/giftalogue-logo-tagline.png"
+        alt="Giftalogue — The Gift Catalogue"
+        style="height:22px;width:auto;"
+      />
+    </div>
+    <div class="small">
+      © <span id="y"></span> Giftalogue · hello@giftalogue.co.uk
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
