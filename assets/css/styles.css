@@ -209,3 +209,68 @@ a:hover{opacity:.9}
   background:#fff;
 }
 .center{display:flex;justify-content:center}
+
+/* ===== Diagonal runway hero ===== */
+.heroRunway{
+  position:relative;
+  padding:64px 0 30px;
+  overflow:hidden;
+}
+
+.heroTitle{
+  max-width:620px;
+  position:relative;
+  z-index:2;
+}
+
+.heroTitle .kicker{margin-bottom:10px}
+.heroTitle h1{
+  margin:0 0 14px;
+  font-size:64px;
+  line-height:1.02;
+  letter-spacing:.01em;
+}
+.heroTitle p{margin:0 0 22px}
+
+.runway{
+  position:absolute;
+  inset:-80px -40px -120px auto;
+  width:min(980px, 78vw);
+  transform:rotate(-12deg);
+  z-index:1;
+  opacity:.98;
+}
+
+.runwayGrid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:16px;
+}
+
+.runwayCard{
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid rgba(18,18,18,.10);
+  box-shadow:0 22px 70px rgba(0,0,0,.10);
+  background:rgba(255,255,255,.65);
+}
+
+.runwayCard img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.runwayCard.tall{aspect-ratio:3/4;}
+.runwayCard.wide{aspect-ratio:16/10;}
+
+@media (max-width:980px){
+  .runway{
+    position:relative;
+    inset:auto;
+    width:100%;
+    transform:none;
+    margin-top:22px;
+  }
+}
