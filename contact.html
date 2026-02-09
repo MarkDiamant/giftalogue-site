@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Enquire — Giftalogue</title>
+
+  <meta name="description" content="Contact Giftalogue about Issue 01 placements. hello@giftalogue.co.uk" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap navbar">
+    <a class="brand" href="index.html" aria-label="Giftalogue home">
+      <img
+        src="assets/img/giftalogue-logo-tagline.png"
+        alt="Giftalogue — The Gift Catalogue"
+      />
+    </a>
+
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="for-brands.html">For Brands</a>
+      <a class="active" href="contact.html">Enquire</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="kicker">Contact</div>
+
+    <h1 class="h1" style="font-size:44px">Enquire for Issue 01</h1>
+
+    <p class="sub">
+      Email us and we’ll reply with availability + the media pack.
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" href="mailto:hello@giftalogue.co.uk">hello@giftalogue.co.uk</a>
+      <a class="btn" href="for-brands.html">View packages</a>
+    </div>
+
+    <div class="badges">
+      <div class="badge">Issue 01 — Spring 2026</div>
+      <div class="badge">Limited premium positions</div>
+      <div class="badge">Giftalogue-designed layouts</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid cols-2">
+
+      <div class="card">
+        <div class="pad">
+          <strong>What to include</strong>
+          <div class="hr"></div>
+          <ul class="list">
+            <li>Brand name + website</li>
+            <li>Product category + price point</li>
+            <li>How many products you want to feature</li>
+            <li>Preferred position (optional)</li>
+            <li>Best contact details</li>
+          </ul>
+
+          <div class="hr"></div>
+          <div class="caption">
+            Best contact: <strong>hello@giftalogue.co.uk</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="pad">
+          <strong>Quick form (optional)</strong>
+          <div class="caption">
+            If you later choose Formspree, we’ll wire this up in 2 minutes. For now, email is perfect.
+          </div>
+          <div class="hr"></div>
+
+          <form class="form" action="#" method="post"
+                onsubmit="alert('Please email hello@giftalogue.co.uk'); return false;">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="company" placeholder="Brand / Company" />
+            <textarea name="message" placeholder="Tell us what you’d like to feature..."></textarea>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+
+          <div class="small" style="margin-top:10px">
+            (This button just prompts email for now — keeps it simple.)
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div>
+      <img
+        src="assets/img/giftalogue-logo-tagline.png"
+        alt="Giftalogue — The Gift Catalogue"
+        style="height:22px;width:auto;"
+      />
+    </div>
+    <div class="small">
+      © <span id="y"></span> Giftalogue · hello@giftalogue.co.uk
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
