@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GIFTALOGUE — The Gift Catalogue</title>
   <meta name="description" content="Giftalogue is a premium printed gift catalogue. Issue 01 launching Spring 2026." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -12,14 +17,13 @@
 <header class="nav">
   <div class="wrap navbar">
     <a class="brand" href="index.html" aria-label="Giftalogue home">
-      <!-- If your logo is JPG, change .png to .jpg -->
-      <img src="assets/img/giftalogue-logo-tagline.png" alt="Giftalogue — The Gift Catalogue" />
+      <img src="assets/img/giftalogue-logo-tagline.jpg" alt="Giftalogue — The Gift Catalogue" />
     </a>
 
     <nav class="links">
       <a class="active" href="index.html">Home</a>
       <a href="for-brands.html">For Brands</a>
-      <a href="contact.html" class="btn gold">Enquire</a>
+      <a href="contact.html" class="btn">Enquire</a>
     </nav>
   </div>
 </header>
@@ -28,93 +32,66 @@
 
   <section class="hero">
     <div class="heroGrid">
-      <div class="heroCard">
-        <div class="kicker">Spring Catalogue 2026</div>
-        <h1 class="h1">GIFTALOGUE</h1>
+
+      <div class="pad">
+        <div class="kicker">Spring catalogue 2026</div>
+        <h1 class="h1">A premium gift catalogue.</h1>
         <p class="sub">
-          A curated, design‑led <strong>gift catalogue</strong> — premium products and experiences,
-          beautifully presented. Launching with <strong>Issue 01</strong>.
+          Curated products and experiences, presented with an editorial feel.
+          Launching with <strong>Issue 01</strong>.
         </p>
 
-        <div class="cta">
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
           <a class="btn primary" href="contact.html">Request brand info</a>
-          <a class="btn" href="for-brands.html">See how it works</a>
+          <a class="btn" href="for-brands.html">For Brands</a>
         </div>
 
         <div class="badges">
-          <div class="badge">Issue 01 launching Spring 2026</div>
+          <div class="badge">Issue 01 — Spring 2026</div>
           <div class="badge">Limited brand partners</div>
-          <div class="badge">Product‑led, not ad‑led</div>
+          <div class="badge">QR / link inside placements</div>
         </div>
       </div>
 
-      <aside class="featurePanel">
-        <div class="panelHead">Design concepts (examples only)</div>
-        <div class="panelGrid">
-          <article class="card">
-            <img class="media cover" src="assets/img/cover-concept-1.jpg" alt="Cover concept" />
-            <div class="pad">
-              <p class="title">Cover concept</p>
-              <p class="caption">Full‑page image with masthead on‑image.</p>
-            </div>
-          </article>
+      <div class="card">
+        <div class="mediaWrap">
+          <!-- BIG COVER -->
+          <img class="bigShot" src="assets/img/cover-concept-1.jpg" alt="Giftalogue cover concept" />
 
-          <div style="display:grid;gap:14px">
-            <article class="card">
-              <img class="media tall" src="assets/img/spread-single.jpg" alt="Single product page" />
-              <div class="pad">
-                <p class="title">Single product page</p>
-                <p class="caption">One hero product with clear CTA.</p>
-              </div>
-            </article>
+          <!-- TWO PREVIEWS -->
+          <div class="stack">
+            <a href="single-product.html" aria-label="View single product page">
+              <img class="shot" src="assets/img/spread-single.jpg" alt="Single product page preview" />
+              <div class="caption"><strong>Single product page</strong> — view full page</div>
+            </a>
 
-            <article class="card">
-              <img class="media wide" src="assets/img/spread-grid.jpg" alt="Multi product page" />
-              <div class="pad">
-                <p class="title">Multi‑product page</p>
-                <p class="caption">Four products per page with QR codes.</p>
-              </div>
-            </article>
+            <a href="multi-product.html" aria-label="View multi product page">
+              <img class="shot" src="assets/img/spread-grid.jpg" alt="Multi product page preview" />
+              <div class="caption"><strong>Multi-product page</strong> — view full page</div>
+            </a>
           </div>
         </div>
-      </aside>
+      </div>
+
     </div>
   </section>
 
   <section class="section">
     <h2>What Giftalogue is</h2>
     <p>
-      Giftalogue is built to feel like a premium catalogue: calm, curated and design‑controlled.
-      Brands get a beautiful placement in print and a clear route to action via QR / links.
+      A curated gift catalogue designed to feel calm, premium, and considered.
+      Built for discovery — not noise.
     </p>
-
-    <div class="grid2">
-      <div class="card">
-        <div class="pad">
-          <p class="title">Curated selection</p>
-          <p class="caption">Gift‑led choices presented with an editorial sensibility.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="pad">
-          <p class="title">Premium presentation</p>
-          <p class="caption">Consistent layout system so the products stay the hero.</p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <footer class="foot">
-    <div class="footRow">
-      <div>
-        <strong>GIFTALOGUE LTD</strong><br/>
-        Company No. <strong>17002688</strong>
-      </div>
-      <div>
-        <strong>hello@giftalogue.co.uk</strong><br/>
-        <span class="small">© <span id="y"></span> Giftalogue. All rights reserved.</span>
-      </div>
+    <div>
+      <img src="assets/img/giftalogue-logo-tagline.jpg" alt="Giftalogue — The Gift Catalogue" style="height:26px;width:auto;">
     </div>
+    <div class="small" style="margin-top:8px">
+      GIFTALOGUE LTD · Company No. 17002688 · hello@giftalogue.co.uk
+    </div>
+    <div class="small">© <span id="y"></span> Giftalogue. All rights reserved.</div>
   </footer>
 
 </main>
