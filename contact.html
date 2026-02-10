@@ -61,25 +61,25 @@
     <div class="hr"></div>
 
     <!-- IMPORTANT: Replace the action URL with your Formspree endpoint -->
-    <form class="form"
-          action="https://formspree.io/f/YOUR_FORM_ID"
-          method="POST">
+<form class="form"
+      action="https://formspree.io/f/xlgwdqpe"
+      method="POST">
 
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="text" name="company" placeholder="Brand / Company">
-      <input type="text" name="website" placeholder="Website (optional)">
-      <textarea name="message" placeholder="What would you like to feature? (category, price point, number of products, preferred position if any)"></textarea>
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="company" placeholder="Brand / Company">
+  <input type="text" name="website" placeholder="Website (optional)">
 
-      <!-- optional: helps keep replies tidy -->
-      <input type="hidden" name="_subject" value="New Giftalogue enquiry">
+  <textarea name="message"
+    placeholder="What would you like to feature? (products, category, timing, etc.)"
+    required></textarea>
 
-      <button class="btn primary" type="submit">Send enquiry</button>
-      <p class="small" style="margin-top:10px">
-        Prefer email? <strong>hello@giftalogue.co.uk</strong>
-      </p>
-    </form>
-  </section>
+  <!-- nice-to-have -->
+  <input type="hidden" name="_subject" value="New Giftalogue enquiry">
+  <input type="hidden" name="_replyto">
+
+  <button class="btn primary" type="submit">Send enquiry</button>
+</form>
 
   <footer class="foot">
     <div class="footRow">
