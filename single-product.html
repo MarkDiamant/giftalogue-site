@@ -35,6 +35,25 @@
     <img class="fullImg" src="assets/img/spread-single.png" alt="Single product page preview">
   </div>
 </main>
+<script>
+  (function () {
+    const toggle = document.querySelector('.navToggle');
+    const menu = document.querySelector('.navMenu');
+    if (!toggle || !menu) return;
+
+    toggle.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // close when you tap outside
+    document.addEventListener('click', (e) => {
+      if (menu.contains(e.target) || toggle.contains(e.target)) return;
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  })();
+</script>
 
 </body>
 </html>
