@@ -16,10 +16,11 @@
 
 <header class="nav">
   <div class="wrap navbar">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Giftalogue home">
       <span class="wordmark">GIFTALOGUE</span>
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
+
     <nav class="links">
       <a href="index.html">Home</a>
       <a href="for-brands.html">For Brands</a>
@@ -30,10 +31,12 @@
 
 <main class="wrap">
 
-  <section class="heroRunway">
+  <section class="heroRunway" id="enquire">
     <div class="heroLayout">
 
+      <!-- LEFT: intro + badges + FORM (higher up) -->
       <div class="heroTitle">
+
         <div class="kicker">ENQUIRE</div>
         <h1 class="h1">Request the media pack.</h1>
         <p class="sub">
@@ -46,66 +49,60 @@
           <div class="badge">Limited placements</div>
           <div class="badge">Curated selection</div>
         </div>
+
+        <div class="formTop">
+          <h2>Enquiry form</h2>
+          <p class="small">We usually reply within 1–2 business days.</p>
+
+          <form class="enquiryForm"
+                action="https://formspree.io/f/xlgwdqpe"
+                method="POST">
+
+            <label>
+              Name
+              <input type="text" name="name" required>
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              Brand / Company
+              <input type="text" name="company" required>
+            </label>
+
+            <label>
+              Website / Instagram
+              <input type="text" name="website" required>
+            </label>
+
+            <label>
+              Example product link
+              <input type="url" name="product_link" placeholder="Optional but helpful">
+            </label>
+
+            <label>
+              What would you like to feature?
+              <textarea name="message" rows="4"
+                placeholder="Products, category, timing, any preferences"
+                required></textarea>
+            </label>
+
+            <input type="hidden" name="_subject" value="New Giftalogue enquiry">
+
+            <button class="btn primary" type="submit">Send enquiry</button>
+
+          </form>
+        </div>
+
       </div>
 
-      <div class="heroVisual">
+      <!-- RIGHT: image -->
+      <div class="heroVisual" aria-hidden="true">
         <img src="assets/img/cover-concept-1.png" alt="Giftalogue cover">
       </div>
-
-    </div>
-  </section>
-
-  <section class="section" id="enquire">
-    <div class="formWrap">
-
-      <div class="formIntro">
-        <h2>Enquiry form</h2>
-        <p>We usually reply within 1–2 business days.</p>
-      </div>
-
-      <div class="hr"></div>
-
-      <form class="enquiryForm"
-        action="https://formspree.io/f/xlgwdqpe"
-        method="POST">
-
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-
-        <label>
-          Brand / Company
-          <input type="text" name="company" required>
-        </label>
-
-        <label>
-          Website / Instagram
-          <input type="text" name="website" required>
-        </label>
-
-        <label>
-          Example product link
-          <input type="url" name="product_link" placeholder="Optional but helpful">
-        </label>
-
-        <label>
-          What would you like to feature?
-          <textarea name="message" rows="4"
-            placeholder="Products, category, timing, any preferences"
-            required></textarea>
-        </label>
-
-        <input type="hidden" name="_subject" value="New Giftalogue enquiry">
-
-        <button class="btn primary" type="submit">Send enquiry</button>
-
-      </form>
 
     </div>
   </section>
@@ -117,6 +114,7 @@
         <div class="tagline" style="font-size:10px">THE GIFT CATALOGUE</div>
         <div class="small">GIFTALOGUE LTD · Company No. 17002688</div>
       </div>
+
       <div class="footRight">
         <div><strong>hello@giftalogue.co.uk</strong></div>
         <div class="small">© <span id="y"></span> Giftalogue</div>
