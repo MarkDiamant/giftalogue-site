@@ -3,71 +3,74 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GIFTALOGUE — The Gift Catalogue</title>
+  <title>Giftalogue — The Gift Catalogue</title>
   <meta name="description" content="Giftalogue is a premium printed gift catalogue. Issue 01 launching Spring 2026." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Favicons (add PNGs into assets/img/ to use these) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
   <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap navbar">
     <a class="brand" href="index.html" aria-label="Giftalogue home">
-  <span class="wordmark">GIFTALOGUE</span>
-  <span class="tagline">THE GIFT CATALOGUE</span>
-</a>
+      <span class="wordmark">GIFTALOGUE</span>
+      <span class="tagline">THE GIFT CATALOGUE</span>
+    </a>
 
     <nav class="links">
       <a class="active" href="index.html">Home</a>
       <a href="for-brands.html">For Brands</a>
-      <a href="contact.html" class="btn">Enquire</a>
+      <a class="btn" href="contact.html">Enquire</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
 
-<section class="heroRunway">
-  <div class="heroTitle">
-    <div class="kicker">Spring Catalogue 2026</div>
-    <h1 class="h1">A premium gift catalogue.</h1>
-    <p class="sub">
-      Curated products and experiences, presented with an editorial feel.
-      Launching with <strong>Issue 01</strong>.
-    </p>
+  <section class="heroRunway">
+    <div class="heroLayout">
 
-    <div class="cta">
-      <a class="btn primary" href="contact.html">Enquire</a>
-      <a class="btn" href="for-brands.html">For Brands</a>
-    </div>
+      <div class="heroTitle">
+        <div class="kicker">SPRING CATALOGUE 2026</div>
+        <h1 class="h1">A premium gift catalogue.</h1>
+        <p class="sub">
+          Curated products and experiences, presented with an editorial feel.
+          Launching with <strong>Issue 01</strong>.
+        </p>
 
-    <div class="badges">
-      <div class="badge">Limited placements</div>
-      <div class="badge">Catalogue‑first design</div>
-      <div class="badge">QR / link inside</div>
-    </div>
-  </div>
+        <div class="cta">
+          <a class="btn primary" href="contact.html">Enquire</a>
+          <a class="btn" href="for-brands.html">For Brands</a>
+        </div>
 
-  <div class="runway" aria-hidden="true">
-    <div class="runwayGrid">
-      <div class="runwayCard tall">
-        <img src="assets/img/cover-concept-1.png" alt="">
+        <div class="badges">
+          <div class="badge">Limited placements</div>
+          <div class="badge">Catalogue‑first design</div>
+          <div class="badge">QR / link inside</div>
+        </div>
+
+        <div class="hr"></div>
+
+        <p class="small">
+          View full previews:
+          <a href="single-product.html"><strong>Single product page</strong></a> ·
+          <a href="multi-product.html"><strong>Multi‑product page</strong></a>
+        </p>
       </div>
-      <div class="runwayCard wide">
-        <img src="assets/img/spread-single.png" alt="">
-      </div>
-      <div class="runwayCard wide">
-        <img src="assets/img/spread-grid.png" alt="">
-      </div>
-    </div>
-  </div>
-</section>
 
+      <div class="heroVisual" aria-hidden="true">
+        <img class="vCover"  src="assets/img/cover-concept-1.png" alt="">
+        <img class="vSingle" src="assets/img/spread-single.png" alt="">
+        <img class="vGrid"   src="assets/img/spread-grid.png" alt="">
+      </div>
+
+    </div>
+  </section>
 
   <section class="section">
     <h2>What Giftalogue is</h2>
@@ -78,15 +81,18 @@
   </section>
 
   <footer class="foot">
-    <div>
-<div class="footerMark">
-  <div class="wordmark">GIFTALOGUE</div>
-  <div class="tagline">THE GIFT CATALOGUE</div>
-</div>    </div>
-    <div class="small" style="margin-top:8px">
-      GIFTALOGUE LTD · Company No. 17002688 · hello@giftalogue.co.uk
+    <div class="footRow">
+      <div>
+        <div class="wordmark">GIFTALOGUE</div>
+        <div class="tagline">THE GIFT CATALOGUE</div>
+        <div class="small">GIFTALOGUE LTD · Company No. 17002688</div>
+      </div>
+
+      <div class="footRight">
+        <div><strong>hello@giftalogue.co.uk</strong></div>
+        <div class="small">© <span id="y"></span> Giftalogue. All rights reserved.</div>
+      </div>
     </div>
-    <div class="small">© <span id="y"></span> Giftalogue. All rights reserved.</div>
   </footer>
 
 </main>
