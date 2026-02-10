@@ -4,14 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Giftalogue — The Gift Catalogue</title>
-  <meta name="description" content="Giftalogue is a premium printed gift catalogue. Issue 01 launching Spring 2026." />
+  <meta name="description" content="A curated gift catalogue designed to feel calm, premium, and considered. Built for discovery — not noise." />
 
-  <!-- Favicons (add PNGs into assets/img/ to use these) -->
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css?v=999">
 </head>
 <body>
 
@@ -25,54 +30,49 @@
     <nav class="links">
       <a class="active" href="index.html">Home</a>
       <a href="for-brands.html">For Brands</a>
-      <a class="btn" href="contact.html">Enquire</a>
+      <!-- IMPORTANT: keep this as a button, do NOT use .active on it -->
+      <a class="btn primary" href="contact.html#enquire">Enquire</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap home">
 
-  <section class="heroRunway">
-    <div class="heroLayout">
+  <section class="heroRunway homeHero">
+    <div class="homeHeroGrid">
 
-      <div class="heroTitle">
-        <div class="kicker">SPRING CATALOGUE 2026</div>
-        <h1 class="h1">A premium gift catalogue.</h1>
+      <div class="homeHeroText">
+        <div class="kicker">THE GIFT CATALOGUE</div>
+        <h1 class="h1">Curated gifting, calmly.</h1>
+
         <p class="sub">
-          Curated products and experiences, presented with an editorial feel.
-          Launching with <strong>Issue 01</strong>.
+          A curated gift catalogue designed to feel calm, premium, and considered.
+          Built for discovery — not noise.
         </p>
 
         <div class="cta">
-          <a class="btn primary" href="contact.html">Enquire</a>
-          <a class="btn" href="for-brands.html">For Brands</a>
+          <a class="btn primary" href="for-brands.html">For Brands</a>
+          <a class="btn" href="contact.html#enquire">Request the media pack</a>
         </div>
 
         <div class="badges">
-          <div class="badge">Limited placements</div>
-          <div class="badge">Catalogue‑first design</div>
-          <div class="badge">QR / link inside</div>
+          <div class="badge">Issue 01 — Spring 2026</div>
+          <div class="badge">Curated selection</div>
+          <div class="badge">QR‑enabled discovery</div>
         </div>
-
-        <div class="hr"></div>
-
-        <p class="small">
-          View full previews:
-          <a href="single-product.html"><strong>Single product page</strong></a> ·
-          <a href="multi-product.html"><strong>Multi‑product page</strong></a>
-        </p>
       </div>
 
-      <div class="heroVisual" aria-hidden="true">
-        <img class="vCover"  src="assets/img/cover-concept-1.png" alt="">
-        <img class="vSingle" src="assets/img/spread-single.png" alt="">
-        <img class="vGrid"   src="assets/img/spread-grid.png" alt="">
+      <div class="homeVisual" aria-hidden="true">
+        <div class="homePanel">
+          <img class="homeSingle" src="assets/img/spread-single.png" alt="">
+          <img class="homeGrid"   src="assets/img/spread-grid.png" alt="">
+        </div>
       </div>
 
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="padding-top:8px">
     <h2>What Giftalogue is</h2>
     <p>
       A curated gift catalogue designed to feel calm, premium, and considered.
@@ -83,8 +83,8 @@
   <footer class="foot">
     <div class="footRow">
       <div>
-        <div class="wordmark">GIFTALOGUE</div>
-        <div class="tagline">THE GIFT CATALOGUE</div>
+        <div class="wordmark" style="font-size:22px">GIFTALOGUE</div>
+        <div class="tagline" style="font-size:10px">THE GIFT CATALOGUE</div>
         <div class="small">GIFTALOGUE LTD · Company No. 17002688</div>
       </div>
 
