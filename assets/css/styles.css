@@ -48,7 +48,6 @@ body{
 .links{display:flex;gap:18px;align-items:center}
 .links a{font-size:14px;color:var(--muted)}
 .links a.active{color:var(--ink)}
-
 .btn{
   padding:12px 18px;
   border-radius:999px;
@@ -64,7 +63,7 @@ body{
 .small{font-size:12px;color:var(--muted)}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
 
-/* HERO */
+/* HERO (default grid used on pages like Contact) */
 .heroRunway{padding:48px 0 26px;overflow:hidden}
 .heroLayout{
   display:grid;
@@ -104,7 +103,7 @@ body{
   background:rgba(255,255,255,.7);
 }
 
-/* CONTACT HERO IMAGE (safe / no-crop) */
+/* CONTACT HERO IMAGE (safe/no-crop) */
 .heroVisual{
   display:flex;
   justify-content:flex-end;
@@ -158,23 +157,20 @@ body{
 }
 .enquiryForm button{align-self:flex-start}
 
-/* ===== FOR BRANDS PAGE LAYOUT ===== */
-
-/* HERO: text left, image right, vertically centered */
+/* ===== FOR BRANDS: HERO + SECOND ROW LAYOUT ===== */
 .fbHeroGrid{
   display:grid;
   grid-template-columns:minmax(360px,560px) 1fr;
   gap:40px;
-  align-items:center;
+  align-items:center; /* centers text to single product image */
 }
-
 .fbHeroImage{
   display:flex;
   justify-content:flex-end;
   align-items:center;
 }
 .fbHeroImage img{
-  max-width:760px;
+  max-width:720px;
   width:100%;
   height:auto;
   border-radius:26px;
@@ -183,22 +179,19 @@ body{
   background:#fff;
 }
 
-/* SECOND ROW: text left, second image right */
 .fbSecondRow{
   display:grid;
   grid-template-columns:minmax(360px,520px) 1fr;
   gap:48px;
   align-items:flex-start;
-  margin:44px 0 10px;
+  margin:40px 0;
 }
-
 .fbSecondImage{
   display:flex;
   justify-content:flex-end;
-  align-items:flex-start;
 }
 .fbSecondImage img{
-  width:100%;
+  max-width:100%;
   height:auto;
   border-radius:26px;
   box-shadow:var(--shadow);
@@ -206,7 +199,13 @@ body{
   background:#fff;
 }
 
-/* list sizing */
+@media (max-width:980px){
+  .fbHeroGrid{grid-template-columns:1fr;align-items:start}
+  .fbHeroImage{justify-content:flex-start}
+  .fbSecondRow{grid-template-columns:1fr;gap:26px}
+}
+
+/* For Brands list size */
 .brandList{
   margin:12px 0 0;
   padding-left:18px;
@@ -214,14 +213,6 @@ body{
   color:rgba(18,18,18,.70);
 }
 .brandList li{margin:6px 0}
-
-/* MOBILE */
-@media (max-width:980px){
-  .fbHeroGrid{grid-template-columns:1fr; align-items:start}
-  .fbHeroImage{justify-content:flex-start}
-  .fbSecondRow{grid-template-columns:1fr; gap:26px}
-  .fbSecondImage{justify-content:flex-start}
-}
 
 /* FOOTER */
 .foot{
