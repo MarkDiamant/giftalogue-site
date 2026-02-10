@@ -4,12 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Enquire — Giftalogue</title>
-  <meta name="description" content="Contact Giftalogue about Issue 01 placements." />
+  <meta name="description" content="Enquire about Giftalogue placements. Media pack available on request." />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -31,44 +28,64 @@
 
 <main class="wrap">
 
-  <section class="heroRunway" style="min-height:auto">
+  <section class="heroRunway" style="min-height:auto;padding-bottom:10px">
     <div class="heroLayout">
 
       <div class="heroTitle">
-        <div class="kicker">CONTACT</div>
-        <h1 class="h1">Enquire for Issue 01.</h1>
-        <p class="sub">Email us and we’ll reply with availability + the media pack.</p>
-
-        <div class="cta">
-          <a class="btn primary" href="mailto:hello@giftalogue.co.uk">hello@giftalogue.co.uk</a>
-          <a class="btn" href="for-brands.html">View packages</a>
-        </div>
+        <div class="kicker">ENQUIRE</div>
+        <h1 class="h1">Request the media pack.</h1>
+        <p class="sub">
+          Tell us a little about your brand and what you’d like to feature.
+          We’ll reply from <strong>hello@giftalogue.co.uk</strong>.
+        </p>
 
         <div class="badges">
           <div class="badge">Issue 01 — Spring 2026</div>
-          <div class="badge">Limited premium positions</div>
-          <div class="badge">Catalogue‑first design</div>
+          <div class="badge">Limited placements</div>
+          <div class="badge">Curated selection</div>
         </div>
-
-        <div class="hr"></div>
-
-        <p class="small"><strong>Include:</strong> brand website, product category + price, number of products, preferred position (optional), best contact details.</p>
       </div>
 
       <div class="heroVisual" aria-hidden="true">
-        <img class="vCover"  src="assets/img/cover-concept-1.png" alt="">
-        <img class="vSingle" src="assets/img/spread-single.png" alt="">
-        <img class="vGrid"   src="assets/img/spread-grid.png" alt="">
+        <img class="vCover" src="assets/img/cover-concept-1.png" alt="">
       </div>
 
     </div>
   </section>
 
+  <!-- FORM (anchor target) -->
+  <section class="section" id="enquire">
+    <h2>Enquiry form</h2>
+    <p>We usually reply within 1–2 business days.</p>
+
+    <div class="hr"></div>
+
+    <!-- IMPORTANT: Replace the action URL with your Formspree endpoint -->
+    <form class="form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST">
+
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="company" placeholder="Brand / Company">
+      <input type="text" name="website" placeholder="Website (optional)">
+      <textarea name="message" placeholder="What would you like to feature? (category, price point, number of products, preferred position if any)"></textarea>
+
+      <!-- optional: helps keep replies tidy -->
+      <input type="hidden" name="_subject" value="New Giftalogue enquiry">
+
+      <button class="btn primary" type="submit">Send enquiry</button>
+      <p class="small" style="margin-top:10px">
+        Prefer email? <strong>hello@giftalogue.co.uk</strong>
+      </p>
+    </form>
+  </section>
+
   <footer class="foot">
     <div class="footRow">
       <div>
-        <div class="wordmark">GIFTALOGUE</div>
-        <div class="tagline">THE GIFT CATALOGUE</div>
+        <div class="wordmark" style="font-size:22px">GIFTALOGUE</div>
+        <div class="tagline" style="font-size:10px">THE GIFT CATALOGUE</div>
         <div class="small">GIFTALOGUE LTD · Company No. 17002688</div>
       </div>
 
