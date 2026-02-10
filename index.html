@@ -34,40 +34,42 @@
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
 
-<nav class="links">
-  <!-- Keep Enquire visible at all times -->
-  <a class="btn primary navCta" href="contact.html#enquire">Enquire</a>
+    <nav class="links">
+      <!-- Enquire always visible -->
+      <a class="btn primary navCta" href="contact.html#enquire">Enquire</a>
 
-  <!-- Hamburger (mobile only) -->
-  <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <!-- Mobile toggle -->
+      <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
 
-  <!-- Menu links (dropdown on mobile, inline on desktop) -->
-  <div class="navMenu" id="navMenu">
-    <a href="index.html">Home</a>
-    <a href="for-brands.html">For Brands</a>
-  </div>
-</nav>
+      <!-- Menu -->
+      <div class="navMenu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="for-brands.html">For Brands</a>
+      </div>
+    </nav>
   </div>
 </header>
 
 <main class="wrap homePage">
 
-  <!-- HERO -->
-  <section class="heroRunway">
+  <!-- HERO (LOCKED, STABLE) -->
+  <section class="heroRunway homeHero">
     <div class="heroLayout">
 
+      <!-- TEXT -->
       <div>
         <div class="kicker">THE GIFT CATALOGUE</div>
+
         <h1 class="h1">Curated gifting, delivered.</h1>
 
         <p class="sub">
-          Giftalogue is a premium printed gift catalogue, delivered free to tens of
-          thousands of households across the UK.
+          Giftalogue is a premium printed gift catalogue, delivered free to
+          tens of thousands of households across the UK.
         </p>
 
         <p class="sub">
-          We curate standout products and experiences and present them in calm,
-          editorial layouts — built for discovery, not noise.
+          We curate standout products and experiences and present them
+          in calm, editorial layouts — built for discovery, not noise.
         </p>
 
         <div class="cta">
@@ -77,16 +79,17 @@
 
         <div class="badges">
           <div class="badge">Issue 01 — Spring 2026</div>
-          <div class="badge">UK-wide distribution</div>
+          <div class="badge">UK‑wide distribution</div>
           <div class="badge">QR‑enabled print</div>
         </div>
       </div>
 
-      <!-- Images (NO absolute positioning) -->
-<div class="homeVisual" aria-hidden="true">
-  <img class="hSingle" src="assets/img/spread-single.png" alt="">
-  <img class="hGrid"   src="assets/img/spread-grid.png" alt="">
-</div>
+      <!-- IMAGE (ONE ONLY) -->
+      <div class="homeHeroImage">
+        <img
+          src="assets/img/spread-grid.png"
+          alt="Giftalogue editorial product spread">
+      </div>
 
     </div>
   </section>
@@ -143,6 +146,7 @@
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
 </script>
+
 <script>
   (function () {
     const toggle = document.querySelector('.navToggle');
@@ -154,7 +158,6 @@
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
-    // close when you tap outside
     document.addEventListener('click', (e) => {
       if (menu.contains(e.target) || toggle.contains(e.target)) return;
       menu.classList.remove('open');
