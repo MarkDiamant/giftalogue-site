@@ -219,3 +219,54 @@ body{
     margin:14px 0;
   }
 }
+/* ===== For Brands: oversized hero visuals ===== */
+
+.brandsHero{
+  overflow:hidden;
+}
+
+.brandsVisual{
+  position:relative;
+  min-height:780px; /* makes room for bigger visuals */
+}
+
+/* Single product page (top image) */
+.brandsVisual .b1{
+  width:780px;
+  right:-320px;
+  top:-120px;
+  transform:rotate(10deg);
+}
+
+/* Cover image */
+.brandsVisual .b2{
+  width:560px;
+  right:-120px;
+  top:160px;
+  transform:rotate(-8deg);
+}
+
+/* Multi-product spread (bottom image) */
+.brandsVisual .b3{
+  width:980px;
+  right:-420px;
+  top:420px;
+  transform:rotate(6deg);
+}
+
+/* Mobile safety */
+@media (max-width:980px){
+  .brandsVisual{
+    min-height:auto;
+  }
+
+  .brandsVisual img{
+    position:relative;
+    right:auto;
+    top:auto;
+    width:100%;
+    transform:none;
+    margin:20px 0;
+  }
+}
+
