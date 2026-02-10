@@ -168,3 +168,54 @@ body{
 }
 .footRight{text-align:right}
 @media (max-width:720px){ .footRight{text-align:left} }
+/* ===== For Brands: angled floating hero visuals (scoped) ===== */
+.forBrands .brandVisual{
+  position:relative;
+  min-height:520px;
+  display:block;
+}
+
+.forBrands .brandVisual img{
+  position:absolute;
+  border-radius:26px;
+  box-shadow:var(--shadow, 0 28px 90px rgba(0,0,0,.14));
+  border:1px solid rgba(18,18,18,.10);
+  background:#fff;
+  width:auto;
+  height:auto;
+}
+
+.forBrands .bSingle{
+  max-width:680px;
+  right:-140px;
+  top:-70px;
+  transform:rotate(8deg);
+}
+
+.forBrands .bGrid{
+  max-width:760px;
+  right:-220px;
+  top:220px;
+  transform:rotate(6deg);
+}
+
+/* Bigger, cleaner list */
+.bigList{
+  margin:14px 0 0;
+  padding-left:18px;
+  font-size:16px;
+  line-height:1.7;
+  color:rgba(18,18,18,.75);
+}
+.bigList li{ margin:8px 0; }
+
+@media (max-width:980px){
+  .forBrands .brandVisual{min-height:0;margin-top:14px}
+  .forBrands .brandVisual img{
+    position:relative;
+    right:auto; top:auto;
+    transform:none;
+    max-width:100%;
+    margin:14px 0;
+  }
+}
