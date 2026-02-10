@@ -4,7 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Giftalogue — The Gift Catalogue</title>
-  <meta name="description" content="A curated gift catalogue designed to feel calm, premium, and considered. Built for discovery — not noise." />
+
+  <meta name="description"
+    content="Giftalogue is a premium printed gift catalogue distributed free to tens of thousands of households across the UK." />
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -12,17 +14,22 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="assets/css/styles.css?v=999">
 </head>
+
 <body>
 
 <header class="nav">
   <div class="wrap navbar">
-    <a class="brand" href="index.html" aria-label="Giftalogue home">
+    <a class="brand" href="index.html">
       <span class="wordmark">GIFTALOGUE</span>
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
@@ -30,24 +37,29 @@
     <nav class="links">
       <a class="active" href="index.html">Home</a>
       <a href="for-brands.html">For Brands</a>
-      <!-- IMPORTANT: keep this as a button, do NOT use .active on it -->
       <a class="btn primary" href="contact.html#enquire">Enquire</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap home">
+<main class="wrap homePage">
 
-  <section class="heroRunway homeHero">
-    <div class="homeHeroGrid">
+  <!-- HERO -->
+  <section class="heroRunway">
+    <div class="heroLayout">
 
-      <div class="homeHeroText">
+      <div>
         <div class="kicker">THE GIFT CATALOGUE</div>
-        <h1 class="h1">Curated gifting, calmly.</h1>
+        <h1 class="h1">Curated gifting, delivered.</h1>
 
         <p class="sub">
-          A curated gift catalogue designed to feel calm, premium, and considered.
-          Built for discovery — not noise.
+          Giftalogue is a premium printed gift catalogue, delivered free to tens of
+          thousands of households across the UK.
+        </p>
+
+        <p class="sub">
+          We curate standout products and experiences and present them in calm,
+          editorial layouts — built for discovery, not noise.
         </p>
 
         <div class="cta">
@@ -57,29 +69,52 @@
 
         <div class="badges">
           <div class="badge">Issue 01 — Spring 2026</div>
-          <div class="badge">Curated selection</div>
-          <div class="badge">QR‑enabled discovery</div>
+          <div class="badge">UK-wide distribution</div>
+          <div class="badge">QR‑enabled print</div>
         </div>
       </div>
 
-      <div class="homeVisual" aria-hidden="true">
-        <div class="homePanel">
-          <img class="homeSingle" src="assets/img/spread-single.png" alt="">
-          <img class="homeGrid"   src="assets/img/spread-grid.png" alt="">
-        </div>
+      <!-- Images (NO absolute positioning) -->
+      <div class="homePanel">
+        <img src="assets/img/spread-single.png" alt="Giftalogue single product feature">
+        <img src="assets/img/spread-grid.png" alt="Giftalogue multi-product spread">
       </div>
 
     </div>
   </section>
 
-  <section class="section" style="padding-top:8px">
-    <h2>What Giftalogue is</h2>
+  <!-- WHAT WE DO -->
+  <section class="section">
+    <h2>What Giftalogue does</h2>
+
     <p>
-      A curated gift catalogue designed to feel calm, premium, and considered.
-      Built for discovery — not noise.
+      Giftalogue connects premium brands with highly engaged consumers through
+      a beautifully designed printed catalogue.
     </p>
+
+    <p>
+      Each issue is distributed free to a large, targeted audience across the UK
+      and designed to be kept, browsed, and revisited — not skimmed and forgotten.
+    </p>
+
+    <div class="hr"></div>
+
+    <h2>How it works</h2>
+    <ul class="bigList">
+      <li>Premium magazine‑style print catalogue</li>
+      <li>Delivered free to tens of thousands of UK households</li>
+      <li>Limited number of curated brand partners per issue</li>
+      <li>QR codes link print directly to product pages</li>
+      <li>All layouts designed in‑house for consistency and quality</li>
+    </ul>
+
+    <div class="cta" style="margin-top:18px">
+      <a class="btn primary" href="for-brands.html">Partner with Giftalogue</a>
+      <a class="btn" href="contact.html#enquire">Request the media pack</a>
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="foot">
     <div class="footRow">
       <div>
