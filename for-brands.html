@@ -1,17 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>For Brands — Giftalogue</title>
-  <meta name="description" content="Partner with Giftalogue — premium print placements in a curated gift catalogue." />
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- CACHE BUSTER -->
+  <link rel="stylesheet" href="assets/css/styles.css?v=7">
 </head>
 <body>
 
@@ -21,6 +18,7 @@
       <span class="wordmark">GIFTALOGUE</span>
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
+
     <nav class="links">
       <a href="index.html">Home</a>
       <a class="active" href="for-brands.html">For Brands</a>
@@ -29,9 +27,9 @@
   </div>
 </header>
 
-<main class="wrap forBrands">
+<main class="wrap">
 
-  <section class="heroRunway">
+  <section class="heroRunway brandsHero">
     <div class="heroLayout">
 
       <div class="heroTitle">
@@ -54,10 +52,11 @@
         </div>
       </div>
 
-      <!-- RIGHT: angled floating images -->
-      <div class="brandVisual" aria-hidden="true">
-        <img class="bSingle" src="assets/img/spread-single.png" alt="">
-        <img class="bGrid"   src="assets/img/spread-grid.png" alt="">
+      <!-- MUST MATCH CSS: .brandsVisual + .b1/.b2/.b3 -->
+      <div class="brandsVisual" aria-hidden="true">
+        <img class="b1" src="assets/img/spread-single.png" alt="">
+        <img class="b2" src="assets/img/cover-concept-1.png" alt="">
+        <img class="b3" src="assets/img/spread-grid.png" alt="">
       </div>
 
     </div>
@@ -69,30 +68,23 @@
       Giftalogue works with a limited number of brand partners per issue. We do not operate an open‑submission model.
       All placements are designed in‑house to maintain a consistent, premium look throughout the catalogue.
     </p>
-  </section>
 
-  <section class="section">
+    <div class="hr"></div>
+
     <h2>Placement formats</h2>
-    <p>Placement formats vary by issue and availability, and include:</p>
-
-    <ul class="bigList">
-      <li><strong>Single product features</strong></li>
-      <li><strong>Multi‑product pages</strong></li>
-      <li><strong>Editorial / themed spreads</strong></li>
-      <li><strong>Premium positions</strong> (covers and key sections)</li>
+    <ul class="brandList">
+      <li>Single product features</li>
+      <li>Multi‑product pages</li>
+      <li>Editorial / themed spreads</li>
+      <li>Premium positions (covers and key sections)</li>
     </ul>
-  </section>
 
-  <section class="section">
+    <div class="hr"></div>
+
     <h2>Availability</h2>
     <p>
-      Availability is limited per category and per issue. Full details (including pricing and timelines) are provided in the private media pack.
-    </p>
-    <p style="margin-top:10px">
-      <a class="btn primary" href="contact.html#enquire">Request the media pack via the enquiry form</a>
-      <span class="small" style="display:block;margin-top:10px">
-        Or email <strong>hello@giftalogue.co.uk</strong>
-      </span>
+      Full details (including pricing and timelines) are provided privately in the media pack.
+      <a href="contact.html#enquire"><strong>Request it via the enquiry form</strong></a>.
     </p>
   </section>
 
@@ -103,18 +95,14 @@
         <div class="tagline" style="font-size:10px">THE GIFT CATALOGUE</div>
         <div class="small">GIFTALOGUE LTD · Company No. 17002688</div>
       </div>
+
       <div class="footRight">
-        <div><strong>hello@giftalogue.co.uk</strong></div>
-        <div class="small">© <span id="y"></span> Giftalogue</div>
+        <strong>hello@giftalogue.co.uk</strong>
       </div>
     </div>
   </footer>
 
 </main>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
