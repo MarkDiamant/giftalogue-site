@@ -4,17 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>For Brands — Giftalogue</title>
+  <meta name="description" content="Partner with Giftalogue — premium, curated gift catalogue placements." />
 
+  <!-- Favicons (make sure these files exist in assets/img/) -->
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 
-  <!-- CACHE BUSTER -->
-  <link rel="stylesheet" href="assets/css/styles.css?v=7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap navbar">
-    <a class="brand" href="index.html">
+    <a class="brand" href="index.html" aria-label="Giftalogue home">
       <span class="wordmark">GIFTALOGUE</span>
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
@@ -27,17 +35,19 @@
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap fb">
 
-  <section class="heroRunway brandsHero">
-    <div class="heroLayout">
+  <!-- HERO: text left, single-product page image right -->
+  <section class="heroRunway fbHero">
+    <div class="fbHeroGrid">
 
-      <div class="heroTitle">
+      <div class="fbHeroText">
         <div class="kicker">FOR BRANDS</div>
         <h1 class="h1">Partner with Giftalogue.</h1>
+
         <p class="sub">
-          Giftalogue is a premium printed gift catalogue featuring a tightly curated selection
-          of products and experiences — calm, considered, editorial.
+          Giftalogue is a premium printed gift catalogue featuring a tightly curated
+          selection of products and experiences — calm, considered, editorial.
         </p>
 
         <div class="cta">
@@ -52,40 +62,59 @@
         </div>
       </div>
 
-      <!-- MUST MATCH CSS: .brandsVisual + .b1/.b2/.b3 -->
-      <div class="brandsVisual" aria-hidden="true">
-        <img class="b1" src="assets/img/spread-single.png" alt="">
-        <img class="b2" src="assets/img/cover-concept-1.png" alt="">
-        <img class="b3" src="assets/img/spread-grid.png" alt="">
+      <div class="fbHeroImage" aria-hidden="true">
+        <img src="assets/img/spread-single.png" alt="">
       </div>
 
     </div>
   </section>
 
-  <section class="section">
-    <h2>How it works</h2>
-    <p>
-      Giftalogue works with a limited number of brand partners per issue. We do not operate an open‑submission model.
-      All placements are designed in‑house to maintain a consistent, premium look throughout the catalogue.
-    </p>
+  <!-- SECOND ROW: How it works + rest LEFT, second image RIGHT -->
+  <section class="fbSecondRow">
 
-    <div class="hr"></div>
+    <div class="fbSecondText">
+      <h2>How it works</h2>
+      <p>
+        Giftalogue works with a limited number of brand partners per issue.
+        We do not operate an open‑submission model.
+      </p>
+      <p>
+        All placements are designed in‑house to maintain a consistent,
+        premium look throughout the catalogue.
+      </p>
 
-    <h2>Placement formats</h2>
-    <ul class="brandList">
-      <li>Single product features</li>
-      <li>Multi‑product pages</li>
-      <li>Editorial / themed spreads</li>
-      <li>Premium positions (covers and key sections)</li>
-    </ul>
+      <div class="hr"></div>
 
-    <div class="hr"></div>
+      <h2>Placement formats</h2>
+      <p>Placement formats vary by issue and availability, and include:</p>
 
-    <h2>Availability</h2>
-    <p>
-      Full details (including pricing and timelines) are provided privately in the media pack.
-      <a href="contact.html#enquire"><strong>Request it via the enquiry form</strong></a>.
-    </p>
+      <ul class="brandList">
+        <li>Single product features</li>
+        <li>Multi‑product pages</li>
+        <li>Editorial / themed spreads</li>
+        <li>Premium positions (covers and key sections)</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <h2>Availability</h2>
+      <p>
+        Availability is limited per category and per issue. Full details, including pricing
+        and timelines, are provided in the private media pack.
+      </p>
+
+      <div style="margin-top:14px">
+        <a class="btn primary" href="contact.html#enquire">Request the media pack</a>
+        <div class="small" style="margin-top:10px">
+          Or email <strong>hello@giftalogue.co.uk</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="fbSecondImage" aria-hidden="true">
+      <img src="assets/img/spread-grid.png" alt="">
+    </div>
+
   </section>
 
   <footer class="foot">
@@ -97,12 +126,17 @@
       </div>
 
       <div class="footRight">
-        <strong>hello@giftalogue.co.uk</strong>
+        <div><strong>hello@giftalogue.co.uk</strong></div>
+        <div class="small">© <span id="y"></span> Giftalogue</div>
       </div>
     </div>
   </footer>
 
 </main>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
