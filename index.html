@@ -34,11 +34,19 @@
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
 
-    <nav class="links">
-      <a class="active" href="index.html">Home</a>
-      <a href="for-brands.html">For Brands</a>
-      <a class="btn primary" href="contact.html#enquire">Enquire</a>
-    </nav>
+<nav class="links">
+  <!-- Keep Enquire visible at all times -->
+  <a class="btn primary navCta" href="contact.html#enquire">Enquire</a>
+
+  <!-- Hamburger (mobile only) -->
+  <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+
+  <!-- Menu links (dropdown on mobile, inline on desktop) -->
+  <div class="navMenu" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="for-brands.html">For Brands</a>
+  </div>
+</nav>
   </div>
 </header>
 
