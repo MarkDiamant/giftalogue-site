@@ -1,34 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Enquire — Giftalogue</title>
-  <meta name="description" content="Enquire about Giftalogue placements. Media pack available on request." />
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap navbar">
-    <a class="brand" href="index.html" aria-label="Giftalogue home">
+    <a class="brand" href="index.html">
       <span class="wordmark">GIFTALOGUE</span>
       <span class="tagline">THE GIFT CATALOGUE</span>
     </a>
-
     <nav class="links">
       <a href="index.html">Home</a>
       <a href="for-brands.html">For Brands</a>
-      <a class="active" href="contact.html">Enquire</a>
+      <a class="btn primary active" href="contact.html">Enquire</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
 
-  <section class="heroRunway" style="min-height:auto;padding-bottom:10px">
+  <section class="heroRunway">
     <div class="heroLayout">
 
       <div class="heroTitle">
@@ -46,40 +48,67 @@
         </div>
       </div>
 
-      <div class="heroVisual" aria-hidden="true">
-        <img class="vCover" src="assets/img/cover-concept-1.png" alt="">
+      <div class="heroVisual">
+        <img src="assets/img/cover-concept-1.png" alt="Giftalogue cover">
       </div>
 
     </div>
   </section>
 
-  <!-- FORM (anchor target) -->
   <section class="section" id="enquire">
-    <h2>Enquiry form</h2>
-    <p>We usually reply within 1–2 business days.</p>
+    <div class="formWrap">
 
-    <div class="hr"></div>
+      <div class="formIntro">
+        <h2>Enquiry form</h2>
+        <p>We usually reply within 1–2 business days.</p>
+      </div>
 
-    <!-- IMPORTANT: Replace the action URL with your Formspree endpoint -->
-<form class="form"
-      action="https://formspree.io/f/xlgwdqpe"
-      method="POST">
+      <div class="hr"></div>
 
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="text" name="company" placeholder="Brand / Company">
-  <input type="text" name="website" placeholder="Website (optional)">
+      <form class="enquiryForm"
+        action="https://formspree.io/f/xlgwdqpe"
+        method="POST">
 
-  <textarea name="message"
-    placeholder="What would you like to feature? (products, category, timing, etc.)"
-    required></textarea>
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
 
-  <!-- nice-to-have -->
-  <input type="hidden" name="_subject" value="New Giftalogue enquiry">
-  <input type="hidden" name="_replyto">
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
 
-  <button class="btn primary" type="submit">Send enquiry</button>
-</form>
+        <label>
+          Brand / Company
+          <input type="text" name="company" required>
+        </label>
+
+        <label>
+          Website / Instagram
+          <input type="text" name="website" required>
+        </label>
+
+        <label>
+          Example product link
+          <input type="url" name="product_link" placeholder="Optional but helpful">
+        </label>
+
+        <label>
+          What would you like to feature?
+          <textarea name="message" rows="4"
+            placeholder="Products, category, timing, any preferences"
+            required></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="New Giftalogue enquiry">
+
+        <button class="btn primary" type="submit">Send enquiry</button>
+
+      </form>
+
+    </div>
+  </section>
 
   <footer class="foot">
     <div class="footRow">
@@ -88,10 +117,9 @@
         <div class="tagline" style="font-size:10px">THE GIFT CATALOGUE</div>
         <div class="small">GIFTALOGUE LTD · Company No. 17002688</div>
       </div>
-
       <div class="footRight">
         <div><strong>hello@giftalogue.co.uk</strong></div>
-        <div class="small">© <span id="y"></span> Giftalogue. All rights reserved.</div>
+        <div class="small">© <span id="y"></span> Giftalogue</div>
       </div>
     </div>
   </footer>
